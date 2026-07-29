@@ -9,3 +9,4 @@ reports/
 *.log
 .env
 pytest.ini
+reports/screenshots/*.png
