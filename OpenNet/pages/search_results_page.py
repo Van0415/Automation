@@ -16,6 +16,6 @@ class SearchResultsPage(BasePage):
     def select_streamer(self, index: int = 0) -> str:
         links = self.get_streamer_links()
         chosen = links[index]
-        identifier = chosen.text.strip() or chosen.get_attribute("href")
+        identifier = chosen.get_attribute("href")
         self.click_element(chosen)
         return identifier
