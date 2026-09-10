@@ -3,13 +3,16 @@
 git clone <your-repository-url>
 cd <your-project-folder>
 
-2. 建立並啟用虛擬環境
+2. 建置環境
+cp .env.example .env
+   Windows (PowerShell):
+   Copy-Item .env.example .env
 python3 -m venv <your-venv-name>
 source <your-venv-name>/bin/activate
    Windows (PowerShell):
    .\<your-venv-name>\Scripts\Activate.ps1
 
-3. 安裝依賴套件
+3. 安裝套件
 pip install --upgrade pip
 pip install -r requirements.txt
 
