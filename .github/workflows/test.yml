@@ -28,6 +28,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Pytest in Headless Mode
+      env:
+        URL: "https://www.momoshop.com.tw"
       run: |
         pytest --headless --html=reports/report.html --self-contained-html
 
